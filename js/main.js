@@ -39,3 +39,8 @@ function createBoxes(amount) {
 function getRandomColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+
+function destroyBoxes(boxes) {
+    boxes.innerHTML = ''
+}
+// Створи функцію destroyBoxes(), яка очищає div#boxes. який сенс її створювати якщо є кнопка destroyBtn яка очищає boxes
